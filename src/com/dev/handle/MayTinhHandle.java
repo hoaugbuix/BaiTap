@@ -49,6 +49,7 @@ public class MayTinhHandle implements BaseHandler<MayTinh>{
         String cauHinh = scanner.nextLine();
 
         if (value != null) {
+            value.setId(value.size + 1);
             value.setSoHieu(soHieu);
             value.setTen(ten);
             value.setXuatXu(xx);
